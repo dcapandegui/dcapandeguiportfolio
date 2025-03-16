@@ -1,0 +1,52 @@
+.heroContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heroText{
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -5;
+}
+
+.heroSubText{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 0.9;
+    letter-spacing: -5;
+    text-wrap: warp;
+}
+
+.dcapandeguiPhoto {
+    height: 425px;
+    -webkit-mask-image: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 1) calc(100% - 30%), 
+        rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, 
+        rgba(0, 0, 0, 1) calc(100% - 30%), 
+        rgba(0, 0, 0, 0) 100%);  
+}
+
+@media (max-width: 768px) {
+    .heroContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .heroText{
+        font-size: 4rem;
+    }
+
+    .heroSubText{
+        display: none;
+    }
+
+    .dcapandeguiPhoto {
+        height: 250px;
+    }
+  }

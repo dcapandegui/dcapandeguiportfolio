@@ -6,8 +6,7 @@ import {stackImgs} from "./assets/stackImgs"
 import Background from "./components/Background"
 import Navbar from "./sections/Navbar"
 import Hero from "./sections/Hero"
-import Proyects from "./sections/Proyects"
-import About from "./sections/About"
+import Proyects from "./sections/Projects"
 import Footer from "./sections/Footer"
 
 import AutoSlider from "./components/AutoSlider/AutoSlider"
@@ -27,7 +26,7 @@ const App = () => {
       <AutoSlider images={stackImgs} width="150px" height="150px"></AutoSlider>
 
       <Proyects></Proyects>
-      <About></About>
+
       <Footer></Footer>
 
     </ModalProvider>

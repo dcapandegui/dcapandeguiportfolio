@@ -19,8 +19,6 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onChange }) => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-console.log(i18n); // Verifica que i18n esté definido y tenga la función changeLanguage
-
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
     if (onChange) onChange(language);

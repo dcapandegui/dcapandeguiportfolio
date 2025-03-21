@@ -9,6 +9,7 @@
     font-weight: 800;
     line-height: 0.9;
     letter-spacing: -5;
+    text-wrap: warp;
 }
 
 .heroSubText{
@@ -39,7 +40,7 @@
     }
     
     .heroText{
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .heroSubText{

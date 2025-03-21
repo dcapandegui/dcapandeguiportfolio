@@ -48,7 +48,7 @@
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    z-index: 10;
+    z-index: 9999999;
   }
   
   .dropdown ul {

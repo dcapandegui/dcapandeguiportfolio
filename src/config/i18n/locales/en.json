@@ -1,3 +1,14 @@
 {
-    "welcome":"welcome"
-}
+    "welcome": "Welcome",
+    "projects":"Projects",
+    "about":"About",
+    "contact":"Contact",
+    "heroLine1":"Hi! I´m Daniel,",
+    "heroLine2":"a FrontEnd",
+    "heroLine3":"Developer",
+    "heroLine4":"Speciallized in React, but open to learn more stacks",
+    "folder_structure": "Folder Structure",
+    "link_demo": "Link Demo",
+    "project_description": "I built an ecommerce web app where users can shop online. It features a homepage, categories, product details, and a secure checkout for authenticated users. The shopping cart is accessible via a sidebar. I used React, React Router DOM for navigation, ContextAPI for global state, and React Query for optimized data handling, fetching products from Fake Store API. The design follows a modern brutalist style. The main challenge was enhancing user experience, improving performance and interactivity with React Query, reducing load times and making navigation smoother."
+  }
+  

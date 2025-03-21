@@ -1,22 +1,25 @@
 import '../styles/Hero.css'
 import portfolioPhoto from '../assets/portfolioPhoto.png'
+import { useTranslation } from 'react-i18next'
 
 const Hero = () => {
+  const {t} = useTranslation();
+  
   return (
     <section id='hero' className='heroContainer'>
 
       <div>
         <div className='heroText'>
-          Hi! I´m Daniel, a
+        {t('heroLine1')}
         </div>
         <div className='heroText'>
-          FrontEnd
+        {t('heroLine2')}
         </div>
         <div className='heroText'>
-          Developer
+        {t('heroLine3')}
         </div>
         <div className='heroSubText'>
-          Speciallized in React, but open to learn more stacks
+        {t('heroLine4')}
         </div>     
       </div>
       <div style={{textAlign:'center'}}>

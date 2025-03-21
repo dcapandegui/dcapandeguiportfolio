@@ -1,10 +1,12 @@
 import { useSidebar } from "../contexts/SidebarContext";
+import { useTranslation } from "react-i18next";
 import NavbarSidebar from "../components/NavbarSidebar";
 import LanguageSelector from "../components/LanguageSelector/LanguageSelector";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
   const { openSidebar } = useSidebar();
+  const {t} = useTranslation();
 
   const handleOpenSidebar = () => {
     openSidebar(<NavbarSidebar />);
@@ -46,7 +48,7 @@ const Navbar = () => {
             scrollToSection("projects");
           }}
         >
-          Projects
+          {t('projects')}
         </a>
         <a
           href="#about"
@@ -55,7 +57,7 @@ const Navbar = () => {
             scrollToSection("about");
           }}
         >
-          About
+          {t('about')}
         </a>
         <a
           href="#footer"
@@ -64,7 +66,7 @@ const Navbar = () => {
             scrollToSection("footer");
           }}
         >
-          Contact
+          {t('contact')}
         </a>
       </div>
       <LanguageSelector />

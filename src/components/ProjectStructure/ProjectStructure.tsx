@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./ProjectStructure.css";
+import { useTranslation } from "react-i18next";
 
-const ProjectStructure = () => {
+const ProjectStructure = ({ structure }: { structure: string[] }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const {t} = useTranslation();
 
   return (
     <div
@@ -28,25 +30,20 @@ const ProjectStructure = () => {
             fill="#FFCA28"
           />
         </svg>
-        <p className="project-text">Project Structure</p>
-      </div>
-
       {isHovered && (
         <div className="dropdown">
           <ul>
             <li>📁 src</li>
-            <li className="sub-item">--📁 app</li>
-            <li className="sub-sub-item">---📄 layout.js</li>
-            <li className="sub-sub-item">---📄 page.js</li>
-            <li className="sub-item">--📁 components</li>
-            <li className="sub-sub-item">---📄 header.js</li>
-            <li className="sub-sub-item">---📄 footer.js</li>
-            <li className="sub-item">--📁 styles</li>
-            <li className="sub-sub-item">---📄 globals.css</li>
+            {structure.map((item, index) => (
+              <li className="sub-item" key={index}> {item} </li>
+            ))}
           </ul>
         </div>
       )}
-    </div>
+        <p className="project-text">{t('folder_structure')}</p>
+      </div>
+
+    </div>  
   );
 };
 

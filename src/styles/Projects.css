@@ -1,6 +1,6 @@
-.proyectContainer{
+.projectContainer{
   margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0.2));
@@ -9,21 +9,22 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.proyectCard{
+.projectCard{
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
 
-.proyectCardP{
-  color: #00438194;
+.projectCardP{
+  color: #004381e3;
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 500;
+  text-wrap: wrap;
 }
 
-.proyectCardImg{
-  max-width: 600px;
+.projectCardImg{
+  max-width: 350px;
   border-radius: 10px;
 }
 
@@ -47,14 +48,7 @@
 }
 
 @media (max-width: 768px) {
-  .proyectCard{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .projectCard{
     flex-direction: column;
-  }
-  
-  .proyectCardImg{
-    max-width: 325px;
   }
 }

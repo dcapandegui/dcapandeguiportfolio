@@ -1,3 +1,14 @@
 {
-    "welcome":"Bienvenido"
-}
+    "welcome": "Bienvenido",
+    "projects":"Proyectos",
+    "about":"Acerca",
+    "contact":"Contacto",
+    "heroLine1":"Hey! soy Daniel, un",
+    "heroLine2":"Desarrollador",
+    "heroLine3":"FrontEnd",
+    "heroLine4":"Especializado en React, pero abierto a aprender mas stacks",
+    "folder_structure": "Estrutura de Carpetas",
+    "link_demo": "Link Demo",
+    "project_description": "Desenvolvi um ecommerce webapp onde usuários podem comprar produtos online. Possui home, categorias, detalhes do produto e um checkout seguro para usuários autenticados. O carrinho pode ser acessado via sidebar interativo. Usei React, React Router DOM para navegação, ContextAPI para estados globais e React Query para otimizar dados, com produtos da Fake Store API. O design segue um estilo brutalista moderno e minimalista. O principal desafio foi otimizar a experiência do usuário, melhorando desempenho e interatividade com React Query, reduzindo tempos de carregamento e tornando a navegação mais fluida."
+  }
+  

@@ -1,6 +1,3 @@
-import { ModalProvider } from "./contexts/ModalContext"
-import { SidebarProvider } from "./contexts/SidebarContext"
-
 import {stackImgs} from "./components/stackImgs"
 
 import Background from "./components/Background"
@@ -16,8 +13,6 @@ import './config/i18n/i18n';
 const App = () => {
   return (
     <>
-    <SidebarProvider>
-    <ModalProvider>
       <Background></Background>
       
       <Navbar></Navbar>
@@ -29,8 +24,6 @@ const App = () => {
 
       <Footer></Footer>
 
-    </ModalProvider>
-    </SidebarProvider>
     </>
   )
 }

@@ -1,7 +1,7 @@
 import { ModalProvider } from "./contexts/ModalContext"
 import { SidebarProvider } from "./contexts/SidebarContext"
 
-import {stackImgs} from "./assets/stackImgs"
+import {stackImgs} from "./components/stackImgs"
 
 import Background from "./components/Background"
 import Navbar from "./sections/Navbar"
@@ -23,7 +23,7 @@ const App = () => {
       <Navbar></Navbar>
       <Hero></Hero>
 
-      <AutoSlider images={stackImgs} width="150px" height="150px"></AutoSlider>
+      <AutoSlider images={stackImgs} width="100px" height="100px"></AutoSlider>
 
       <Proyects></Proyects>
 

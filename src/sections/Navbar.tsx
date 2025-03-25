@@ -1,16 +1,10 @@
-import { useSidebar } from "../contexts/SidebarContext";
 import { useTranslation } from "react-i18next";
-import NavbarSidebar from "../components/NavbarSidebar";
 import LanguageSelector from "../components/LanguageSelector/LanguageSelector";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
-  const { openSidebar } = useSidebar();
   const {t} = useTranslation();
 
-  const handleOpenSidebar = () => {
-    openSidebar(<NavbarSidebar />);
-  };
 
   // Función para hacer el scroll suave hacia la sección correspondiente
   const scrollToSection = (id: string) => {
@@ -70,9 +64,6 @@ const Navbar = () => {
         </a>
       </div>
       <LanguageSelector />
-      <div className="navbar-toggle" onClick={handleOpenSidebar}>
-        ☰
-      </div>
     </nav>
   );
 };
